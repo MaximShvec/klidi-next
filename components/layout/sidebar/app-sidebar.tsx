@@ -2,7 +2,7 @@
 
 import * as React from "react";
 import { useEffect } from "react";
-import { ChevronsUpDown, ShoppingBagIcon, UserCircle2Icon } from "lucide-react";
+import { ChevronsUpDown, CreditCard, Share2 } from "lucide-react";
 import { PlusIcon } from "@radix-ui/react-icons";
 import { usePathname } from "next/navigation";
 import { useIsTablet } from "@/hooks/use-mobile";
@@ -60,30 +60,27 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
                 side={isMobile ? "bottom" : "right"}
                 align="end"
                 sideOffset={4}>
-                <DropdownMenuLabel>Projects</DropdownMenuLabel>
+                <DropdownMenuLabel>Dashboards</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem className="flex items-center gap-3">
                   <div className="flex size-8 items-center justify-center rounded-md border">
-                    <ShoppingBagIcon className="text-muted-foreground size-4" />
+                    <Share2 className="text-muted-foreground size-4" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-sm font-medium">E-commerce</span>
-                    <span className="text-xs text-green-700">Active</span>
+                    <span className="text-sm font-medium">Referal Dashboard</span>
                   </div>
                 </DropdownMenuItem>
                 <DropdownMenuItem className="flex items-center gap-3">
                   <div className="flex size-8 items-center justify-center rounded-md border">
-                    <UserCircle2Icon className="text-muted-foreground size-4" />
+                    <CreditCard className="text-muted-foreground size-4" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-sm font-medium">Blog Platform</span>
-                    <span className="text-muted-foreground text-xs">Inactive</span>
+                    <span className="text-sm font-medium">POS Dashboard</span>
                   </div>
                 </DropdownMenuItem>
                 <DropdownMenuSeparator />
                 <Button className="w-full">
                   <PlusIcon />
-                  New Project
                 </Button>
               </DropdownMenuContent>
             </DropdownMenu>
