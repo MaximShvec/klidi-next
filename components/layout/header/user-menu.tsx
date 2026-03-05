@@ -1,17 +1,14 @@
-import { BadgeCheck, Bell, ChevronRightIcon, CreditCard, LogOut, Sparkles } from "lucide-react";
+import { Bell, Link2, LogOut, Settings, Star, User, Wallet } from "lucide-react";
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
-import Link from "next/link";
-import { Progress } from "@/components/ui/progress";
 
 export default function UserMenu() {
   return (
@@ -36,47 +33,34 @@ export default function UserMenu() {
           </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuGroup>
-          <DropdownMenuItem asChild>
-            <Link href="https://shadcnuikit.com/pricing" target="_blank">
-              <Sparkles /> Upgrade to Pro
-            </Link>
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
-        <DropdownMenuGroup>
-          <DropdownMenuItem>
-            <BadgeCheck />
-            Account
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <CreditCard />
-            Billing
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Bell />
-            Notifications
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <LogOut />
-          Log out
+        <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+          <Star className="fill-current" />
+          Monthly limit: 9000 EUR
         </DropdownMenuItem>
-        <div className="bg-muted mt-1.5 rounded-md border">
-          <div className="space-y-3 p-3">
-            <div className="flex items-center justify-between">
-              <h4 className="text-sm font-medium">Credits</h4>
-              <div className="text-muted-foreground flex cursor-pointer items-center text-sm">
-                <span>5 left</span>
-                <ChevronRightIcon className="ml-1 h-4 w-4" />
-              </div>
-            </div>
-            <Progress value={40} indicatorColor="bg-primary" />
-            <div className="text-muted-foreground flex items-center text-sm">
-              Daily credits used first
-            </div>
-          </div>
-        </div>
+        <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+          <Bell />
+          Increase Limits
+        </DropdownMenuItem>
+        <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+          <Link2 />
+          Referral Link
+        </DropdownMenuItem>
+        <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+          <Settings />
+          Profile
+        </DropdownMenuItem>
+        <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+          <Star className="fill-current" />
+          Balances
+        </DropdownMenuItem>
+        <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+          <Wallet />
+          White List Wallets
+        </DropdownMenuItem>
+        <DropdownMenuItem onSelect={(e) => e.preventDefault()}>
+          <User />
+          Logout
+        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   );

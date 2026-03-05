@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Maksim",
+    "transactionAmount": 1000,
+    "numberOfTransactions": 3,
+    "added": 1.5,
+    "amountOfShops": 2
+  },
+  {
+    "id": 2,
+    "name": "Anna",
+    "transactionAmount": 2500,
+    "numberOfTransactions": 12,
+    "added": 3.2,
+    "amountOfShops": 5
+  },
+  {
+    "id": 3,
+    "name": "Dmitry",
+    "transactionAmount": 750,
+    "numberOfTransactions": 7,
+    "added": 0.8,
+    "amountOfShops": 1
+  },
+  {
+    "id": 4,
+    "name": "Elena",
+    "transactionAmount": 5000,
+    "numberOfTransactions": 25,
+    "added": 5.0,
+    "amountOfShops": 8
+  },
+  {
+    "id": 5,
+    "name": "Alexey",
+    "transactionAmount": 1200,
+    "numberOfTransactions": 5,
+    "added": 2.1,
+    "amountOfShops": 3
+  },
+  {
+    "id": 6,
+    "name": "Maria",
+    "transactionAmount": 3200,
+    "numberOfTransactions": 18,
+    "added": 4.5,
+    "amountOfShops": 6
+  },
+  {
+    "id": 7,
+    "name": "Sergey",
+    "transactionAmount": 890,
+    "numberOfTransactions": 4,
+    "added": 1.2,
+    "amountOfShops": 2
+  },
+  {
+    "id": 8,
+    "name": "Olga",
+    "transactionAmount": 4100,
+    "numberOfTransactions": 22,
+    "added": 3.8,
+    "amountOfShops": 7
+  },
+  {
+    "id": 9,
+    "name": "Ivan",
+    "transactionAmount": 1500,
+    "numberOfTransactions": 9,
+    "added": 2.5,
+    "amountOfShops": 4
+  },
+  {
+    "id": 10,
+    "name": "Natalia",
+    "transactionAmount": 2800,
+    "numberOfTransactions": 15,
+    "added": 3.0,
+    "amountOfShops": 5
+  }
+]

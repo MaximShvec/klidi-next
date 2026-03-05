@@ -15,9 +15,8 @@ export const navItems = [
   {
     title: "Меню",
     items: [
-      { title: "Главная", href: "/", icon: HomeIcon },
-      { title: "Разделы", href: "#", icon: LayoutIcon },
-      { title: "Настройки", href: "#", icon: SettingsIcon }
+      { title: "Dashboard", href: "/", icon: HomeIcon },
+      { title: "Settings", href: "#", icon: SettingsIcon }
     ]
   }
 ];
